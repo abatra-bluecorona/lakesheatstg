@@ -101,9 +101,6 @@ if (empty($category_name) || in_array("all", $category_name)) {
                                                             <div class="coupon_name promotion_c h-coupan-100 text-center">
                                                                 <div class="color_primary_bg mb-2 w-100  h-coupan-100" style="background-color: <?php echo $color; ?>;">
                                                                     <h4 class="mb-0 pt-lg-3 pt-3 coupon_title coupon_offer"><?php echo $title; ?></h4>
-																	 <?php } ?>
-                                                                <?php if (!empty($heading)) { ?>
-                                                                    <span class="d-block text-center coupon_subtitle coupon_heading"><?php echo esc_html($heading); ?></span>
                                                                     <?php if ($noexpiry != 1 && !empty($date)) { ?>
                                                                         <span class="pt-lg-3 pt-2 d-block coupon_expiry"><?php echo "expires " . $date . "<br>"; ?></span>
                                                                     <?php } ?>
